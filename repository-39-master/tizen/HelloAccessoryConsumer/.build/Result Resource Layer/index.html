@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,user-scalable=no"/>
+	<title>Wearable UI</title>
+	<link rel="stylesheet"  href="lib/tau/wearable/theme/default/tau.min.css">
+	<!-- load theme file for your application -->
+	<link rel="stylesheet"  href="css/style.css">
+</head>
+<body>
+	<div class="ui-page ui-page-active" id="main">
+		<header class="ui-header">
+			<h2 class="ui-title">Power Note</h2>
+		</header>
+		<div class="ui-content content-padding">
+
+			    <p id="calories" style="font-size: 20px "> Calories</p>
+				<p id="steps" style="font-size: 20px ">Steps</p>
+				<p id="heartrate" style="font-size: 20px ">Heart Rate</p>
+		
+			<div class="ui-grid-col-3 button-group-height">
+				<button type="button" class="ui-btn" onclick="connect();">Connect</button>
+				<button type="button" class="ui-btn" onclick="fetch();">Share</button>
+				<button type="button" class="ui-btn" onclick="disconnect();">Disconnect</button>
+			</div>
+			<div id="resultBoard">
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="lib/tau/wearable/js/tau.min.js"></script>
+<!-- load javascript file for your application -->
+<script src="js/pedo.js"></script>
+<script src="js/main.js"></script>
+<script src="js/lowBatteryCheck.js"></script>
+</html>

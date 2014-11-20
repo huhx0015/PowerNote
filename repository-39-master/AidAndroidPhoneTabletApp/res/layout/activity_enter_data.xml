@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#eeeff1"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000" />
+    </ScrollView>
+
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Chart name:"
+	        android:textColor="#000" />
+	
+	    <EditText
+	        android:id="@+id/editTextView"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="my_example_chart" />
+	</LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/createChartButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#1dbee2"
+            android:padding="5dp"
+            android:text="Create Chart"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/deleteChartButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#1dbee2"
+            android:padding="5dp"
+            android:text="Delete Chart"
+            android:textColor="#FFF" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+	    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="Steps:"
+	        android:textColor="#000" />
+	
+	    <EditText
+	        android:id="@+id/editTextViewSteps"
+	        android:layout_width="0px"
+	        android:layout_weight="1"
+	        android:layout_height="wrap_content"
+	        android:text="50" />
+	</LinearLayout>
+	
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/addDataButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#1dbee2"
+            android:padding="5dp"
+            android:text="Add Data"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/readDataButton"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#1dbee2"
+            android:padding="5dp"
+            android:text="Read Data"
+            android:textColor="#FFF" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/resetDataButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="#1dbee2"
+        android:padding="5dp"
+        android:text="Reset Data"
+        android:textColor="#FFF" />
+
+</LinearLayout>

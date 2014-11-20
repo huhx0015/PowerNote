@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:id="@+id/content"
+    a:layout_width="fill_parent"
+    a:layout_height="wrap_content"
+    a:background="#FFF"
+    a:orientation="vertical"
+    a:paddingBottom="20dp" >
+
+    <LinearLayout
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:gravity="left|center_vertical"
+        a:orientation="horizontal"
+        a:padding="8dp" >
+
+        <TextView
+            a:id="@+id/commentDate"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="09.01.2014"
+            a:textColor="#000"
+            a:layout_marginRight="8dp"
+            a:textSize="16sp" />
+
+        <TextView
+            a:id="@+id/commentDot1"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="●"
+            a:textColor="#F00"
+            a:textSize="32sp" />
+
+        <TextView
+            a:id="@+id/commentDot2"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="●"
+            a:textColor="#0F0"
+            a:textSize="32sp" />
+
+        <TextView
+            a:id="@+id/commentDot3"
+            a:layout_width="wrap_content"
+            a:layout_height="wrap_content"
+            a:text="●"
+            a:textColor="#FF0"
+            a:textSize="32sp" />
+    </LinearLayout>
+
+    <TextView
+        a:id="@+id/commentBody"
+        a:layout_width="fill_parent"
+        a:layout_height="wrap_content"
+        a:paddingLeft="8dp"
+        a:paddingRight="8dp"
+        a:text="Just another general check up. Glad to see my health getting better every visit!"
+        a:textColor="#000"
+        a:textSize="16sp" />
+
+</LinearLayout>

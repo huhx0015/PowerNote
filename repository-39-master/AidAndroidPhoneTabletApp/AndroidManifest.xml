@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="us.gpop.aid"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="com.samsung.accessory.permission.ACCESSORY_FRAMEWORK" />
+    <uses-permission android:name="com.samsung.wmanager.APP" />
+    <uses-permission android:name="com.samsung.wmanager.ENABLE_NOTIFICATION" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="com.samsung.WATCH_APP_TYPE.Integrated" />
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:name="us.gpop.aid.AidApp"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:manageSpaceActivity="com.salesforce.androidsdk.ui.ManageSpaceActivity" >
+
+        <meta-data android:name="dreamforce.gpop.us.dreamforce" android:resource="@xml/wearable_app_desc"/>
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        
+        <activity
+            android:name="us.gpop.aid.LoginActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="us.gpop.aid.AddPeopleActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        
+        <activity
+            android:name="us.gpop.aid.EnterDataActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        
+        <activity
+            android:name="us.gpop.aid.ViewChartActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        
+        <activity
+            android:name="us.gpop.aid.ViewDataActivity"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+
+        <uses-library android:name="android.test.runner" />
+
+         <service android:name="us.gpop.aid.Wearables.WearPedometerListenerService" >
+			<intent-filter>
+				<action android:name="com.google.android.gms.wearable.BIND_LISTENER" />
+			</intent-filter>
+		</service>
+        
+        <service android:name="com.samsung.android.example.helloaccessoryprovider.service.HelloAccessoryProviderService" >
+        </service>
+
+        <receiver android:name="com.samsung.android.sdk.accessory.ServiceConnectionIndicationBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.accessory.service.action.ACCESSORY_SERVICE_CONNECTION_IND" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.samsung.android.sdk.accessory.RegisterUponInstallReceiver" >
+            <intent-filter>
+                <action android:name="android.accessory.device.action.REGISTER_AFTER_INSTALL" />
+            </intent-filter>
+        </receiver>
+
+        <meta-data
+            android:name="AccessoryServicesLocation"
+            android:value="/res/xml/accessoryservices.xml" />
+        <meta-data
+            android:name="GearAppType"
+            android:value="wgt" />
+    </application>
+
+    <instrumentation
+        android:name="com.salesforce.androidsdk.util.JUnitReportTestRunner"
+        android:label="Tests for SmartStore"
+        android:targetPackage="com.salesforce.androidsdk.smartstore.tests" />
+
+    <uses-sdk android:minSdkVersion="8" />
+    
+    <permission android:name="us.gpop.aid.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="us.gpop.aid.C2D_MESSAGE" />
+
+</manifest>

@@ -1,0 +1,33 @@
+// Facebook SDK
+include ':facebook', ':f8e2e'
+
+// Tests
+include 'TestApp'
+project(':TestApp').projectDir = new File('facebook/TestApp')
+include 'tests'
+project(':tests').projectDir = new File('facebook/tests')
+
+// Samples
+include 'FriendPickerSample'
+project(':FriendPickerSample').projectDir = new File('samples/FriendPickerSample')
+include 'HelloFacebookSample'
+project(':HelloFacebookSample').projectDir = new File('samples/HelloFacebookSample')
+include 'PlacePickerSample'
+project(':PlacePickerSample').projectDir = new File('samples/PlacePickerSample')
+include 'RPSSample'
+project(':RPSSample').projectDir = new File('samples/RPSSample')
+include 'Scrumptious'
+project(':Scrumptious').projectDir = new File('samples/Scrumptious')
+include 'SwitchUserSample'
+project(':SwitchUserSample').projectDir = new File('samples/SwitchUserSample')
+
+// Internal Apps
+include 'f8e2e'
+project(':f8e2e').projectDir = new File('internal/testing/f8e2e')
+include 'f8e2eSurrogate'
+project(':f8e2eSurrogate').projectDir = new File('internal/testing/f8e2eSurrogate')
+include 'WatchList'
+project(':WatchList').projectDir = new File('internal/testing/WatchList')
+
+
+

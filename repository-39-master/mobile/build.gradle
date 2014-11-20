@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+
+android {
+
+    compileSdkVersion 20
+    buildToolsVersion "20.0.0"
+
+    defaultConfig {
+        applicationId "dreamforce.gpop.us.dreamforce"
+        minSdkVersion 16
+        targetSdkVersion 20
+        versionCode 1
+        versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            runProguard false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.google.android.gms:play-services:5.0.89'
+    compile 'com.android.support:appcompat-v7:20.+'
+    compile 'com.android.support:support-v4:20.0.+'
+    wearApp project(':wear')
+    compile files('C:/Users/Michael Yoon Huh/Development/Android/repository-39/libraries/GraphView.jar')
+}

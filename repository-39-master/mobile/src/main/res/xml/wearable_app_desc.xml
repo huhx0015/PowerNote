@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<wearableApp package="dreamforce.gpop.us.dreamforce">
+    <versionCode>1</versionCode>
+    <versionName>0.10</versionName>
+    <rawPathResId>wear</rawPathResId>
+</wearableApp>

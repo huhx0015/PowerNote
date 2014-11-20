@@ -1,0 +1,9 @@
+
+export ANDROID_SDK_DIR=/Users/Shared/android-sdk
+
+export SALESFORCE_SDK_DIR=/Users/lnanek/Desktop/repository-39/SalesforceMobileSDK-Android
+
+export NATIVE_DIR=$SALESFORCE_SDK_DIR/native
+
+export LIBS_DIR=$SALESFORCE_SDK_DIR/libs
+

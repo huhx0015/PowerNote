@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:id="@+id/addpeople_activity_layout">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap_dock"
+        android:src="@drawable/bottom_bar"
+        android:layout_gravity="bottom" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/ap_main_container">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ap_top_btn_container"
+            android:layout_gravity="top">
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="+ Add New"
+                android:id="@+id/ap_add_people_btn"
+                android:background="@android:color/transparent"
+                android:gravity="left|center"
+                android:padding="20dp" />
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="1dp"
+                android:id="@+id/ap_border_line"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/ap_list_container">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="380dp"
+                android:id="@+id/ap_list_items"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ap_button_container"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:padding="10dp">
+
+        <ImageButton
+            android:id="@+id/navigation_btn_1"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:background="@android:color/transparent"
+            android:padding="9dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/myaid" />
+
+        <ImageButton
+            android:id="@+id/navigation_btn_2"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:background="@android:color/transparent"
+            android:padding="9dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/mynetwork_on" />
+
+        <ImageButton
+            android:id="@+id/navigation_btn_3"
+            android:layout_width="86dp"
+            android:layout_height="86dp"
+            android:background="@android:color/transparent"
+            android:padding="9dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/setting" />
+
+    </LinearLayout>
+
+</FrameLayout>

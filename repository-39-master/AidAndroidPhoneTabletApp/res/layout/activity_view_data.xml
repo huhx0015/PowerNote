@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:a="http://schemas.android.com/apk/res/android"
+    a:layout_width="fill_parent"
+    a:layout_height="fill_parent" >
+
+    <LinearLayout
+        a:id="@+id/content"
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:background="#FFF"
+        a:orientation="vertical" >
+
+        <LinearLayout
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:background="#0C8CA9"
+            a:gravity="left|center_vertical"
+            a:orientation="horizontal"
+            a:padding="10dp"
+            a:paddingBottom="16dp" >
+
+            <ImageView
+                a:layout_width="wrap_content"
+                a:layout_height="wrap_content"
+                a:layout_marginLeft="8dp"
+                a:layout_marginRight="16dp"
+                a:src="@drawable/david" />
+
+            <TextView
+                a:id="@+id/person_text"
+                a:layout_width="fill_parent"
+                a:layout_height="wrap_content"
+                a:gravity="left|center_vertical"
+                a:text="David Lee"
+                a:textColor="#FFF"
+                a:textSize="20sp" />
+        </LinearLayout>
+
+        <ScrollView
+            a:layout_width="fill_parent"
+            a:layout_height="0px"
+            a:layout_weight="1" >
+
+            <LinearLayout
+                a:id="@+id/content"
+                a:layout_width="fill_parent"
+                a:layout_height="wrap_content"
+                a:orientation="vertical"
+                a:paddingBottom="10dp"
+                a:paddingLeft="10dp"
+                a:paddingRight="10dp"
+                a:paddingTop="20dp" >
+
+                <LinearLayout
+                    a:layout_width="fill_parent"
+                    a:layout_height="wrap_content"
+                    a:orientation="horizontal" >
+
+                    <TextView
+                        a:id="@+id/stepsDotLabel"
+                        a:layout_width="0px"
+                        a:layout_height="wrap_content"
+                        a:layout_weight="1"
+                        a:gravity="center"
+                        a:text="Step"
+                        a:textColor="#000"
+                        a:textSize="16sp" />
+
+                    <TextView
+                        a:id="@+id/sleepDotLabel"
+                        a:layout_width="0px"
+                        a:layout_height="wrap_content"
+                        a:layout_weight="1"
+                        a:gravity="center"
+                        a:text="Sleep"
+                        a:textColor="#000"
+                        a:textSize="16sp" />
+
+                    <TextView
+                        a:id="@+id/heartDotLabel"
+                        a:layout_width="0px"
+                        a:layout_height="wrap_content"
+                        a:layout_weight="1"
+                        a:gravity="center"
+                        a:text="Heart Rate"
+                        a:textColor="#000"
+                        a:textSize="16sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    a:layout_width="fill_parent"
+                    a:layout_height="wrap_content"
+                    a:orientation="horizontal" >
+
+                    <View
+                        a:layout_width="0px"
+                        a:layout_height="0px"
+                        a:layout_weight="1" />
+
+                    <us.gpop.aid.ArcView
+                        a:id="@+id/stepsDot"
+                        a:layout_width="96dp"
+                        a:layout_height="96dp" />
+
+                    <View
+                        a:layout_width="0px"
+                        a:layout_height="0px"
+                        a:layout_weight="1" />
+
+                    <us.gpop.aid.ArcView
+                        a:id="@+id/sleepDot"
+                        a:layout_width="96dp"
+                        a:layout_height="96dp" />
+
+                    <View
+                        a:layout_width="0px"
+                        a:layout_height="0px"
+                        a:layout_weight="1" />
+
+                    <us.gpop.aid.ArcView
+                        a:id="@+id/heartDot"
+                        a:layout_width="96dp"
+                        a:layout_height="96dp" />
+
+                    <View
+                        a:layout_width="0px"
+                        a:layout_height="0px"
+                        a:layout_weight="1" />
+                </LinearLayout>
+
+                <TextView
+                    a:id="@+id/comment_text"
+                    a:layout_width="fill_parent"
+                    a:layout_height="wrap_content"
+                    a:gravity="left"
+                    a:paddingBottom="16dp"
+                    a:text="Comment"
+                    a:textColor="#000"
+                    a:textSize="16sp"
+                    a:textStyle="bold" />
+
+                <EditText
+                    a:id="@+id/commentField"
+                    a:layout_width="fill_parent"
+                    a:layout_height="125dp"
+                    a:layout_marginBottom="16dp"
+                    a:background="@drawable/edit_text_border"
+                    a:gravity="top" />
+
+                <Button
+                    a:id="@+id/checkinButton"
+                    a:layout_width="wrap_content"
+                    a:layout_height="wrap_content"
+                    a:layout_gravity="right"
+                    a:background="#1dbee2"
+                    a:gravity="center"
+                    a:padding="8dp"
+                    a:text="submit"
+                    a:textColor="#FFF"
+                    a:textSize="16sp"
+                    a:textStyle="bold" />
+
+                <LinearLayout
+                    a:id="@+id/commentsContainer"
+                    a:layout_width="fill_parent"
+                    a:layout_height="wrap_content"
+                    a:orientation="vertical"
+                    a:paddingBottom="100dp" >
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:gravity="bottom"
+        a:orientation="vertical" >
+
+        <ImageView
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:src="@drawable/bottom_bar" />
+    </LinearLayout>
+
+    <LinearLayout
+        a:layout_width="fill_parent"
+        a:layout_height="fill_parent"
+        a:gravity="bottom"
+        a:orientation="vertical"
+        a:paddingBottom="16dp" >
+
+        <LinearLayout
+            a:layout_width="fill_parent"
+            a:layout_height="wrap_content"
+            a:gravity="center"
+            a:orientation="horizontal" >
+
+            <Button
+                a:id="@+id/myaidButton"
+                a:layout_width="67dp"
+                a:layout_height="67dp"
+                a:layout_marginRight="16dp"
+                a:background="@drawable/myaid_on" />
+
+            <Button
+                a:id="@+id/mynetworkButton"
+                a:layout_width="67dp"
+                a:layout_height="67dp"
+                a:background="@drawable/mynetwork" />
+
+            <Button
+                a:id="@+id/settingButton"
+                a:layout_width="67dp"
+                a:layout_height="67dp"
+                a:layout_marginLeft="16dp"
+                a:background="@drawable/setting" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

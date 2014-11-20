@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/df_pedometer_activity_layout">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_blue_dark"
+        android:gravity="center_horizontal"
+        android:id="@+id/df_title_container">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="POWER NOTE WEAR"
+            android:id="@+id/df_pedometer_title"
+            android:textColor="@android:color/white"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:typeface="sans"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/df_pedometer_count_container">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TOTAL STEPS:"
+            android:id="@+id/df_pedometer_text"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@android:color/white"
+            android:padding="5dp"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:id="@+id/df_pedometer_count"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:textColor="@android:color/white"
+            android:typeface="sans" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:gravity="center"
+        android:padding="10dp"
+        android:id="@+id/df_pedometer_button_container">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TRANSMISSION OFF"
+            android:id="@+id/df_pedometer_transmit_btn"
+            android:textSize="12sp"
+            android:typeface="sans"
+            android:padding="5dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/my_network_on" />
+
+    </LinearLayout>
+
+</FrameLayout>

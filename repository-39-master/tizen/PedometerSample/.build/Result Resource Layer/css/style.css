@@ -1,0 +1,362 @@
+body {
+    -webkit-user-select: none;
+    background: black !important;
+}
+.ui-body-c {
+    background: black;
+    text-shadow: none;
+    color: white;
+    line-height: 24px;
+    font-size: 18px;
+}
+
+.ui-title {
+    font-size: 1.85rem !important;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.ui-footer > button {
+    height: inherit;
+}
+
+.header_title {
+    font-size: 30px;
+    text-align: left;
+    margin-left: 12px;
+    line-height: 52px;
+    -webkit-margin-before: 0 !important;
+    -webkit-margin-after: 0 !important;
+}
+
+.ui-header img {
+    height: 44px;
+}
+
+.ui-content {
+    background: #000;
+    padding: 12px 16px;
+}
+
+.ui-listview li {
+    font-size: 28px;
+}
+
+.ui-btn-up-c:visited, .ui-btn-up-c a.ui-link-inherit {
+    color: white;
+}
+
+.ui-btn-up-c, .ui-btn-down-c, .ui-btn-hover-c {
+    border: 1px solid #333;
+    text-shadow: none;
+    color: white;
+    background: black;
+}
+
+.ui-btn-down-c, .ui-btn-hover-c {
+    background: #4d4d4d;
+    color: white;
+}
+
+.ui-btn-inner, .ui-fullsize .ui-btn-inner {
+    border-top: 1px solid black;
+    border-color: rgba(0, 0, 0, .3);
+    font-size: 31px; /* 44px */
+    font-weight: 100;
+}
+
+.ui-btn-down-c:hover, .ui-btn.ui-btn-hover-c a.ui-link-inherit, .ui-btn-down-c a.ui-link-inherit {
+    color: white;
+}
+
+.ui-checkbox-off .ui-icon,
+.ui-checkbox-on .ui-icon {
+    background-color: inherit;
+    border: 1px solid #ff9100 !important;
+    border-radius: 0px;
+}
+
+.ui-radio .ui-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    margin-top: -15px !important;
+    left: 9px !important;
+    background-size: 0;
+}
+
+fieldset.ui-controlgroup {
+    margin: 4px 0;
+    border-radius: 0;
+}
+
+.tile {
+    position: relative;
+    float: left;
+    height: 50%;
+    width: 50%;
+    margin: 0;
+}
+.tile:active {
+    background: #635D59;
+}
+
+.start_tile {
+    position: relative;
+    float: left;
+    height: 50%;
+    width: 50%;
+    border: 1px solid #ff9100;
+    overflow: hidden;
+}
+
+.tile .thumbnail {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 9vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 75%;
+    margin: auto;
+}
+
+#register-btn .thumbnail {
+    background-image: url('../images/play.png');
+}
+
+#history-btn .thumbnail {
+    background-image: url('../images/history.png');
+}
+
+#settings-btn .thumbnail {
+    background-image: url('../images/settings.png');
+}
+
+#exit-btn .thumbnail {
+    background-image: url('../images/exit.png');
+}
+
+#register .ui-content,
+#details .ui-content {
+    padding: 5px 5px;
+}
+
+.tile .title {
+    position: absolute;
+    bottom: 3vh;
+    width: 100%;
+    text-align: center;
+    color: #ff9100;
+    font-weight: bold;
+    font-size: 8vw;
+}
+
+.start_tile .title {
+    position: absolute;
+    top: 2vh;
+    width: 100%;
+    text-align: center;
+    color: #ff9100;
+    font-size: 7.5vw;
+}
+
+.steps {
+    border-left: 0;
+    border-top: 0;
+}
+
+.distance {
+    border-top: 0;
+    border-right: 0;
+}
+
+.time {
+    border-bottom: 0;
+    border-left: 0;
+}
+
+.speed {
+    border-right: 0;
+    border-bottom: 0;
+}
+
+.navigation {
+    background: #FF9100;
+    width: 286px;
+    height: 54px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 17px;
+}
+
+.left {
+    position: absolute;
+    width: 142px;
+    text-align: center;
+    line-height: 54px;
+    color: black;
+    border-right: 1px solid black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.right {
+    position: absolute;
+    left: 143px;
+    width: 142px;
+    text-align: center;
+    line-height: 54px;
+    color: black;
+    border-left: 1px solid black;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.full {
+    position: absolute;
+    width: 286px;
+    text-align: center;
+    line-height: 54px;
+    color: black;
+    border: 0;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+.value {
+    position: absolute;
+    color: #ff9100;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+    bottom: 1vh;
+    word-spacing: -.25em;
+}
+
+.value span {
+    font-size: 10vw;
+}
+
+.ui-li .ui-btn-inner a.ui-link-inherit, .ui-li-static.ui-li {
+    padding: 16px;
+    padding-top: 39px;
+}
+
+.ui-btn-hover-c, .ui-btn.ui-btn-hover-c {
+    border: 1px solid #ff9100;
+    background-color: #000;
+}
+
+.ui-btn-down-c, .ui-btn.ui-btn-down-c {
+    background-color: #58493A;
+    border: 1px solid #333;
+}
+
+.scrollable {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.ui-content .ui-listview {
+    margin: 0; /* default margin of '-15px' breaks scrolling */
+}
+
+.settings-value {
+    position: absolute;
+    right: 16px;
+}
+
+.ui-navbar .ui-btn {
+    height: 90px;
+    background: #4D4D4D;
+}
+
+.ui-navbar .ui-btn-inner {
+    padding: 0 !important;
+}
+
+.ui-navbar .ui-btn-text {
+    line-height: 90px;
+    font-size: 32px;
+}
+
+.listbox {
+    border-top: 1px solid #333333;
+    border-left: 1px solid #333333;
+    border-right: 1px solid #333333;
+}
+
+.listbox .listview li {
+    height: 75px;
+    border-bottom: 1px solid #333333;
+}
+
+.listbox .listview li input[type="radio"] {
+    position: absolute;
+    left: 28px;
+    margin-top: 12px;
+}
+
+.listbox .listview li label.labelradio {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    padding-left: 72px;
+    display: block;
+}
+
+.listbox .listview li label.labelradio:hover {
+    background-color: #635D59;
+}
+
+li.profile-step-length > a {
+    font-size: 80%; /* Reduce too big font, which overlap each other */
+}
+
+li.profile-step-length {
+    min-height: 0;
+}
+
+#name-area {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#name-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    display: -webkit-flex;
+}
+
+#name-header p {
+    margin: auto;
+}
+
+#name-text {
+    width: 100%;
+}
+
+@media screen and (max-height: 300px) {
+    .ui-footer {
+        display: none;
+        visibility: hidden;
+    }
+
+    .ui-content {
+        height: auto !important;
+    }
+}
