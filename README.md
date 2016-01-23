@@ -7,6 +7,12 @@ Platform: Android, Android Wear, Tizen
 
 ![powernote_preview](https://cloud.githubusercontent.com/assets/1645482/12527635/c90dc244-c133-11e5-9636-7d402febca73.jpg)
 
+Event: Salesforce $1 Million Hackathon
+
+Event Time: Octoboer 10 - 12, 2014
+
+Event Website: https://developer.salesforce.com/million-dollar-hackathon
+
 Turn your wearable device into an easy health journal!
 
 1. Problem we are solving: There is no easy way to view my health data.
