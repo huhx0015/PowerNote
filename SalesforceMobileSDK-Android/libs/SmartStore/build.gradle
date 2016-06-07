@@ -1,5 +1,4 @@
-
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 dependencies {
   compile project(':libs:SalesforceSDK')
@@ -7,8 +6,9 @@ dependencies {
 }
 
 android {
-  compileSdkVersion 11
-  buildToolsVersion "20.0.0"
+  compileSdkVersion 23
+  buildToolsVersion "23.0.3"
+  useLibrary 'org.apache.http.legacy'
 
   sourceSets {
     main {
@@ -29,7 +29,6 @@ android {
     }
   }
   defaultConfig {
-    testPackageName "com.salesforce.androidsdk.smartstore.tests"
     testInstrumentationRunner "com.salesforce.androidsdk.util.JUnitReportTestRunner"
   }
   packagingOptions {

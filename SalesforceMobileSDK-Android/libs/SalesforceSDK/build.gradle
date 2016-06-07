@@ -1,5 +1,4 @@
-
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 dependencies {
   compile files('libs/cordova-2.3.0.jar')
@@ -13,8 +12,9 @@ dependencies {
 }
 
 android {
-  compileSdkVersion 11
-  buildToolsVersion "20.0.0"
+  compileSdkVersion 23
+  buildToolsVersion "23.0.3"
+  useLibrary 'org.apache.http.legacy'
 
   sourceSets {
     main {
@@ -35,7 +35,6 @@ android {
     }
   }
   defaultConfig {
-    testPackageName "com.salesforce.androidsdk.tests"
     testInstrumentationRunner "com.salesforce.androidsdk.util.JUnitReportTestRunner"
   }
   packagingOptions {
@@ -44,5 +43,4 @@ android {
     exclude 'META-INF/DEPENDENCIES'
     exclude 'META-INF/NOTICE'
   }
-
 }

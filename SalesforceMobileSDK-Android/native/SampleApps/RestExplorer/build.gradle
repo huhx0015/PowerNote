@@ -1,12 +1,13 @@
-apply plugin: 'android'
+apply plugin: 'com.android.application'
 
 dependencies {
   compile project(':libs:SalesforceSDK')
 }
 
 android {
-  compileSdkVersion 11
-  buildToolsVersion "20.0.0"
+  compileSdkVersion 23
+  buildToolsVersion "23.0.3"
+  useLibrary 'org.apache.http.legacy'
 
   sourceSets {
 
@@ -28,7 +29,6 @@ android {
     }
   }
   defaultConfig {
-    testPackageName "com.salesforce.samples.restexplorer"
     testInstrumentationRunner "com.salesforce.androidsdk.util.JUnitReportTestRunner"
   }
   packagingOptions {
