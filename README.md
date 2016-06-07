@@ -16,6 +16,8 @@ Event Time: October 10 - 12, 2014
 
 Event Website: https://developer.salesforce.com/million-dollar-hackathon
 
+DevPost: http://devpost.com/software/powernote
+
 ## Description
 
 Turn your wearable device into an easy health journal!
